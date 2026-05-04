@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>System Access</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: monospace;
+            padding: 20px;
+        }
+        #final {
+            display: none;
+            text-align: center;
+            margin-top: 50px;
+            color: pink;
+        }
+        .flower {
+            font-size: 40px;
+            animation: float 2s infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="hack"></div>
+
+<div id="final">
+    <h1>🌸 ACCESS GRANTED: JEEVAN ❤️ 🌸</h1>
+    <p>Hey Jeevan…</p>
+    <p>
+        I need to say something honestly.<br><br>
+
+        I’m really sorry for lying to you.<br>
+        I know it hurt you, and you didn’t deserve that from me.<br><br>
+
+        “Decrypting truth…”<br>
+        The truth is — I care about you so much, and I hate that I made you feel otherwise.<br><br>
+
+        I should have been honest from the start.<br>
+        No excuses.<br><br>
+
+        “System error: Trust compromised 💔”<br><br>
+
+        But if there’s even a small chance…<br>
+        I want to fix this — slowly, properly, and truthfully.<br><br>
+
+        “Requesting permission to rebuild trust…”<br><br>
+
+        I miss us.<br>
+        And I’m really, truly sorry.<br><br>
+
+        I’ll prove it, not just say it.
+    </p>
+    <div class="flower">🌸 🌹 🌸 🌹 🌸</div>
+</div>
+
+<script>
+let text = [
+"Initializing system...",
+"Identifying user: Jeevan...",
+"Bypassing security...",
+"Accessing private data...",
+"Decrypting feelings...",
+"Loading love.exe..."
+];
+
+let i = 0;
+
+function typeLine() {
+    if (i < text.length) {
+        document.getElementById("hack").innerHTML += text[i] + "<br>";
+        i++;
+        setTimeout(typeLine, 800);
+    } else {
+        setTimeout(showFinal, 1500);
+    }
+}
+
+function showFinal() {
+    document.getElementById("hack").style.display = "none";
+    document.getElementById("final").style.display = "block";
+}
+
+typeLine();
+</script>
+
+</body>
+</html>
